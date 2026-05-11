@@ -1,2 +1,2 @@
 # quackpotato.github.io
-react test site for learning
+test site for learning
