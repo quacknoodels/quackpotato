@@ -8,12 +8,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <style>
+        .title-card{
+            color: rgb(15, 132, 199);
+            text-shadow: 2px 2px 5px;
+            text-align: left;
+            font-size: 200px;
+            position: relative;
+            margin: 20px;
+            padding: 20px;
+            animation-name: title-animation;
+            animation-duration: 0.7s;
+        }
+
+        @keyframes title-animation {
+            0% {color: rgb(0, 0, 0, 0); left: 400px; top: 0px;}
+            50% {color: rgb(52, 3, 187, 0.5);}
+            100% {color: rgb(15, 132, 199); left: 0px; top: 0px;}
+        }
+    </style>
 </head>
 
 <body>
     <div class="container text-center">
-        <h1 class="text-success">
-            Welcome to GeeksforGeeks
+        <h1 class="title-card">
+            TEST SITE
         </h1>
         <p class="text-dark">A Simple Example of Bootstrap</p>
     </div>
