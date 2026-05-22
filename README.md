@@ -1,2 +1,2 @@
-# quackpotato.github.io
-test site for learning
+# quackpotato
+figuring out how to bootstrap these stuff
