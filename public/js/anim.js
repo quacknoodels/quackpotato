@@ -12,9 +12,6 @@ $(document).ready(function(){
     //option hover
     $(".menu-option").hover(
         function() {
-            $(".menu-option").not(this).animate({
-                opacity: "0.5"
-            }, 1);
             $(this).animate({
                 color: "#6a45cf",
                 "font-size": "2.4rem",
@@ -22,9 +19,6 @@ $(document).ready(function(){
             }, 50);
         },
         function() {
-            $(".menu-option").not(this).animate({
-                opacity: "1"
-            }, 1);
             $(this).animate({
                 color: "#c4d7fa",
                 "font-size": "2rem",
