@@ -12,18 +12,24 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <!-- local include -->
-    <script src="start-anim.js"></script>
-    <link href="styles.css" rel="stylesheet">
+    <script src="\node_modules\jquery-color\dist\jquery.color.min.js"></script>
+    <script src="\public\js\anim.js"></script>
+    <link href="\public\css\styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container text-left">
+    <div class="container" id="main-body">
         <h1 class="title-card">
             TITLE
         </h1>
-        <p class="menu-option">Option</p>
-        <p class="menu-option">Option</p>
-        <p class="menu-option">Option</p>
+        <div class="row align-items-start">
+            <div class="col">
+                <p class="menu-option">Option 1</p>
+                <p class="menu-option">Option 2</p>
+                <p class="menu-option">Option 3</p>
+            </div>
+            <div class="col"></div>
+        </div>
     </div>
 </body>
 

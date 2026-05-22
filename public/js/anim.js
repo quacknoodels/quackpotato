@@ -1,0 +1,41 @@
+//starting animation on site loadup
+$(document).ready(function(){
+    //startup
+    var titleCard = $(".title-card");
+    titleCard.animate({ left: "0.5em" });
+    titleCard.animate({ left: "-=1em", opacity: "1" }, "fast");
+    var menuOption = $(".menu-option");
+    menuOption.animate({ left: "0.5em" }, "slow");
+    optionAnim(menuOption);
+    //menuOption.animate({ left: "-=0.8em", opacity: "1" }, "fast");
+
+    //option hover
+    $(".menu-option").hover(
+        function() {
+            $(".menu-option").not(this).animate({
+                opacity: "0.5"
+            }, 1);
+            $(this).animate({
+                color: "#6a45cf",
+                "font-size": "2.4rem",
+                "background-color": "#c4d7fa"
+            }, 50);
+        },
+        function() {
+            $(".menu-option").not(this).animate({
+                opacity: "1"
+            }, 1);
+            $(this).animate({
+                color: "#c4d7fa",
+                "font-size": "2rem",
+                "background-color": "transparent"
+            }, 50);
+        }
+    )
+})
+
+function optionAnim(options) {
+    options.eq(0).animate({ left: "-=0.8em", opacity: "1" }, 150, function(){
+        optionAnim(options.slice(1)); //slice off first element
+    })
+}
