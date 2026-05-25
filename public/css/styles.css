@@ -12163,6 +12163,14 @@ body {
   font-size: 1rem;
 }
 
+.transition {
+  top: 0rem;
+  width: 300rem;
+  height: 100rem;
+  background-color: #c4d7fa;
+  position: fixed;
+}
+
 .title-card {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.1rem;

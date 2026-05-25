@@ -17,6 +17,14 @@ body {
   font-size: $font-size-base;
 }
 
+.transition{
+  top: 0rem;
+  width: 300rem;
+  height: 100rem;
+  background-color: $secondary-color;
+  position: fixed;
+}
+
 .title-card{
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.1rem;
