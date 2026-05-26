@@ -12165,10 +12165,14 @@ body {
 
 .transition {
   top: 0rem;
-  width: 300rem;
+  width: 150rem;
   height: 100rem;
   background-color: #c4d7fa;
-  position: fixed;
+  position: absolute;
+}
+
+.transition[name=backing] {
+  background-color: #927eff;
 }
 
 .title-card {

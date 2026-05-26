@@ -1,6 +1,7 @@
 // Define Sass variables
 $primary-color: #6a45cf;
 $secondary-color: #c4d7fa;
+$tertiary-color: #927eff;
 $font-size-base: 1rem;
 
 // Import Bootstrap's Sass source files
@@ -19,10 +20,14 @@ body {
 
 .transition{
   top: 0rem;
-  width: 300rem;
+  width: 150rem;
   height: 100rem;
   background-color: $secondary-color;
-  position: fixed;
+  position: absolute;
+}
+
+.transition[name=backing] {
+  background-color: $tertiary-color;
 }
 
 .title-card{

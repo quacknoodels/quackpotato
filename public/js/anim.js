@@ -1,24 +1,13 @@
-//starting animation on site loadup
+//starting animation using jquery on site loadup
 $(document).ready(function(){
     //startup
-    /*$(".transition").animate({
-        left: "-200em",
-        width: "0",
-        height: "25rem"
-    }, "slow");
-    $(".transition").animate({
-        height: "0"
-    },"1");
-    */
-    var transitionSlides = $(".transition");
-    transitionAnim(transitionSlides);
-    var titleCard = $(".title-card");
-    titleCard.animate({ left: "0.5em" });
-    titleCard.animate({ left: "-=1em", opacity: "1" }, "fast");
-    var menuOption = $(".menu-option");
-    menuOption.animate({ left: "0.5em" }, "slow");
-    optionAnim(menuOption);
-    //menuOption.animate({ left: "-=0.8em", opacity: "1" }, "fast");
+        var titleCard = $(".title-card");
+        titleCard.animate({ left: "0.4em" });
+        titleCard.animate({ left: "-=1em", opacity: "1" }, "fast");
+        var menuOption = $(".menu-option");
+        menuOption.animate({ left: "0.8em" }, "slow");
+        optionAnim(menuOption);
+
 
     //option hover
     $(".menu-option").hover(
@@ -38,17 +27,6 @@ $(document).ready(function(){
         }
     )
 })
-
-function transitionAnim(slides) {
-    slides.eq(0).animate({
-        left: "-200em",
-        width: "0",
-        height: "25rem"
-    }, {duration:"slow", queue: false});
-    slides.eq(0).animate({ height: "0" },{duration:"slow", queue: false, complete: function(){
-        transitionAnim(slides.slice(1)); //slice off first element
-    }});
-}
 
 function optionAnim(options) {
     options.eq(0).animate({ left: "-=0.8em", opacity: "1" }, 150, function(){
