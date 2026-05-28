@@ -11,11 +11,25 @@ $font-size-base: 1rem;
 $body-bg: $primary-color;
 $text-color: $secondary-color;
 
+
 // Custom styles
 body {
-  background-color: $body-bg;
+  //background-color: $body-bg;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
   color: $text-color;
   font-size: $font-size-base;
+}
+
+.bg {
+  background-image: linear-gradient(to bottom, $primary-color, $tertiary-color);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .transition{
@@ -31,8 +45,9 @@ body {
 }
 
 .title-card{
+  color: $secondary-color;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0.1rem;
+  -webkit-text-stroke: 0.1rem $secondary-color;
   opacity: 0;
   text-align: left;
   font-size: 8rem;
@@ -56,6 +71,7 @@ body {
   position: relative;
   margin: -1rem;
   padding: 1rem;
+  white-space: nowrap;
 }
 
 // Define a mixin for rounded corners

@@ -28,6 +28,8 @@ $(document).ready(function(){
     )
 })
 
+//kill transition element
+
 function optionAnim(options) {
     options.eq(0).animate({ left: "-=0.8em", opacity: "1" }, 150, function(){
         optionAnim(options.slice(1)); //slice off first element

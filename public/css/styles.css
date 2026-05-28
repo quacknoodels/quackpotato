@@ -12158,9 +12158,21 @@ textarea.form-control-lg {
   }
 }
 body {
-  background-color: #6a45cf;
+  height: 100%;
+  width: 100%;
+  margin: 0;
   color: #c4d7fa;
   font-size: 1rem;
+}
+
+.bg {
+  background-image: linear-gradient(to bottom, #6a45cf, #927eff);
+  /* Full height */
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .transition {
@@ -12176,8 +12188,9 @@ body {
 }
 
 .title-card {
+  color: #c4d7fa;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0.1rem;
+  -webkit-text-stroke: 0.1rem #c4d7fa;
   opacity: 0;
   text-align: left;
   font-size: 8rem;
@@ -12201,6 +12214,7 @@ body {
   position: relative;
   margin: -1rem;
   padding: 1rem;
+  white-space: nowrap;
 }
 
 .button {
